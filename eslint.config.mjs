@@ -1,7 +1,7 @@
 import antfu from "@antfu/eslint-config";
+import nextPlugin from "@next/eslint-plugin-next";
 
 export default antfu({
-	ignores: ["worker-configuration.d.ts"],
 	stylistic: {
 		indent: "tab",
 		quotes: "double",
@@ -22,4 +22,8 @@ export default antfu({
 	},
 	formatters: true,
 	react: true
+}, {
+	plugins: {
+		"@next/next": nextPlugin
+	}
 });
