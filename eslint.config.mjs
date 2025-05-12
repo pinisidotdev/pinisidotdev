@@ -17,7 +17,8 @@ export default antfu({
 	lessOpinionated: true,
 	typescript: {
 		overrides: {
-			"unused-imports/no-unused-vars": "off"
+			"unused-imports/no-unused-vars": "off",
+			"no-console": ["warn", { allow: ["info", "warn", "error"] }]
 		}
 	},
 	formatters: true,
