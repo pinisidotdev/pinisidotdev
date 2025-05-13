@@ -11,7 +11,8 @@ export default antfu({
 			"style/array-bracket-spacing": ["warn", "never", { singleValue: false, objectsInArrays: false, arraysInArrays: false }],
 			"style/array-element-newline": ["warn", "consistent", { multiline: true, minItems: 6 }],
 			"style/arrow-parens": ["warn", "as-needed", { requireForBlockBody: false }],
-			"style/comma-dangle": ["warn", "never"]
+			"style/comma-dangle": ["warn", "never"],
+			"curly": ["warn", "multi-line", "consistent"]
 		}
 	},
 	lessOpinionated: true,
