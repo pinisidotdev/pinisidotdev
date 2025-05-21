@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: pnpm exec eslint --fix {staged_files}
+      stage_fixed: true
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit {1}
