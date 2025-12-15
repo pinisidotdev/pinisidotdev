@@ -7,9 +7,10 @@ import { twMerge } from "tailwind-merge";
 interface Props {
 	href: string;
 	label: string;
+	onClick: () => void;
 }
 
-const LinkTransition = ({ href, label }: Props) => {
+const LinkTransition = ({ href, label, onClick }: Props) => {
 	// const router = useRouter()
 	const pathname = usePathname();
 
@@ -30,7 +31,7 @@ const LinkTransition = ({ href, label }: Props) => {
 				)}
 			>
 			</span>
-			<Link href={href} onClick={handleClick}>
+			<Link href={href} onClick={onClick}>
 				{label}
 			</Link>
 		</li>
